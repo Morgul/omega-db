@@ -1,0 +1,31 @@
+{
+  "name": "omega-db",
+  "version": "0.0.0",
+  "description": "A low-level, fluent database access api based on RethinkDB's javascript api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morgul/omega-db.git"
+  },
+  "keywords": [
+    "fluent",
+    "database",
+    "query",
+    "filter",
+    "sql",
+    "nosql"
+  ],
+  "author": "Christopher S. Case <chris.case@g33xnexus.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Morgul/omega-db/issues"
+  },
+  "homepage": "https://github.com/Morgul/omega-db",
+  "dependencies": {
+    "promise": "^5.0.0",
+    "lodash": "^2.4.1"
+  }
+}
