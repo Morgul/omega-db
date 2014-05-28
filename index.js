@@ -38,27 +38,27 @@ omega_db.Selector = Selector;
 omega_db.Filter = Filter;
 
 
-    // Generic selectors
-    .field(fieldName)           // Select a field from the current item
+// Generic selectors
+omega_db.field(fieldName)           // Select a field from the current item
 
-    // Aggregate functions (if .groupBy has been called, these apply across each group of items)
-    .count([fieldName])         // Select the number of distinct values in the given field (or the total number of items, if `fieldName` is omitted)
-    .sum(fieldName)             // Select the sum of the given field
-    .min(fieldName)             // Select the minimum value of the given field
-    .max(fieldName)             // Select the maximum value of the given field
-    .avg(fieldName)             // Select the average value of the given field
+// Aggregate functions (if .groupBy has been called, these apply across each group of items)
+omega_db.count([fieldName])         // Select the number of distinct values in the given field (or the total number of items, if `fieldName` is omitted)
+omega_db.sum(fieldName)             // Select the sum of the given field
+omega_db.min(fieldName)             // Select the minimum value of the given field
+omega_db.max(fieldName)             // Select the maximum value of the given field
+omega_db.avg(fieldName)             // Select the average value of the given field
 
 
-    // Filters
-    .eq(fieldName, value)
-    .le(fieldName, value)
-    .contains(fieldName, value | list())
-    .in(fieldName, query | value | list())
-    .isNull(fieldName)
+// Filters
+omega_db.eq(fieldName, value)
+omega_db.le(fieldName, value)
+omega_db.contains(fieldName, value | list())
+omega_db.in(fieldName, queryable | value | list())
+omega_db.isNull(fieldName)
 
-    // Logical Connectives
-    .and(filter, [filter, ...])
-    .or(filter, [filter, ...])
+// Logical Connectives
+omega_db.and(filter, [filter, ...])
+omega_db.or(filter, [filter, ...])
 
 // --------------------------------------------------------------------------------------------------------------------
 
